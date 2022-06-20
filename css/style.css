@@ -17,7 +17,6 @@ nav {
 nav div{
     width: 20%; /* Širina div kontainerja je 20% */
     margin: 4%; /* Razdalja mer zunanjim robom div kontainerja in prostiem placu je 4%. Kar pomeni na levi in na desni je 4%, vse skupaj 8% */
-    background-color: rebeccapurple;
 }
 nav div a{
     font-size: 50px; /* Linkom damo velikost pisave 50px */
@@ -37,7 +36,6 @@ nav div a{
 .Naslov{
     align-items: center; /* Da stvari v center od Zgoraj navzdol */
     text-align: center; /* Da text v center od Leve proti Desni */
-    background-color: rebeccapurple;
     font-size: 200px; /* Linkom damo velikost pisave 200px */
     width: 100%; /* Širina div kontainerja je 100% */
     margin-top: 10%;
@@ -127,5 +125,11 @@ form div{
 .formi{
     display: flex;
     flex-direction: row;
+}
+.id{
+    font-size: 20px;
+}
+.koment{
+    font-size: 20px;
 }
 /*#endregion PHP stvari*/

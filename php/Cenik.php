@@ -15,8 +15,8 @@
         <!-- Navigacijska Vrstica -->
         <div><a href="../index.html">MainPage</a></div> <!-- Gumb za MainPage -->
         <div><a href="">O Nas</a></div> <!-- Gumb za O Nas -->
-        <div><a href="./php/Cenik.php">Cenik</a></div> <!-- Gumb za Cenik -->
-        <div><a href="">Komentarji</a></div> <!-- Gumb za Komentarje -->
+        <div><a href="./Cenik.php">Cenik</a></div> <!-- Gumb za Cenik -->
+        <div><a href="./komentiraj.php">Komentarji</a></div> <!-- Gumb za Komentarje -->
     </nav> <!-- Konec Navigacijske Vrstice -->
     <div class="container">
         <div class="Naslov"> GlowZone </div>
@@ -27,9 +27,6 @@
         if (isset($_GET['ID'])) {
             $ID = $_GET['ID'];
             $delete = mysqli_query($conn, "DELETE FROM cenik WHERE ID = $ID");
-        }
-        if (isset($_GET['ID-Update'])) {
-            $IDu = $_GET['ID-Update'];
         }
         $sql = "SELECT * FROM cenik";
         $info = mysqli_query($conn, $sql);
@@ -51,7 +48,7 @@
                 ";
             do{
                 $row = mysqli_fetch_assoc($info);
-                echo "<td> " .$row['ID']. " </td>";
+                echo "<td class='id'> " .$row['ID']. " </td>";
                 echo "<td> " .$row['Cena']. " </td>";
                 echo "<td> " .$row['Velikost']. " </td>";
                 echo "<td> ".$row['Barva']." </td>";
