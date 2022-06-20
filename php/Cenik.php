@@ -48,7 +48,7 @@
                 ";
             do{
                 $row = mysqli_fetch_assoc($info);
-                echo "<td class='id'> " .$row['ID']. " </td>";
+                echo "<td class='id'> " .$row['ID']. " </td>"; 
                 echo "<td> " .$row['Cena']. " </td>";
                 echo "<td> " .$row['Velikost']. " </td>";
                 echo "<td> ".$row['Barva']." </td>";
