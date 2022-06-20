@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/*#region Navigation Bar*/
+nav {
+    display: flex; /* To pač določi da je display FLEX */
+    flex-direction: row; /* To naredi da vse v tem predmeti (vse v nav) bo napisano v Vrsti (row) */
+    background-color: rgb(54, 54, 54); /* To spremeni barvo ozadja v Navigaciji */
+    height: 100px; /* Določi višino elementa nav */
+    align-items: center; /* Da stvari v center od Zgoraj navzdol */
+    text-align: center; /* Da text v center od Leve proti Desni */
+}
+nav div{
+    width: 20%; /* Širina div kontainerja je 20% */
+    margin: 4%; /* Razdalja mer zunanjim robom div kontainerja in prostiem placu je 4%. Kar pomeni na levi in na desni je 4%, vse skupaj 8% */
+    background-color: rebeccapurple;
+}
+nav div a{
+    font-size: 50px; /* Linkom damo velikost pisave 50px */
+    color: white; /* Barvo pisave dolocimo da je bela */
+    text-decoration: none; /* Dekoracijo pisave odstranimo - torej odstranimo crto pod besedo ki se nahaja v a-ju */
+    margin: 10px; /* Razdalja med zunanjim robom in prostim prostorom je 10px */
+}
+
+
+/*#endregion Navigation Bar*/
+
+/*#region Main Body*/
+.container{
+    display: flex; /* To pač določi da je display FLEX */
+    flex-direction: column; /* To naredi da vse v tem predmeti (vse ki je class container) bo napisano v stolpec (column) */
+}
+.Naslov{
+    align-items: center; /* Da stvari v center od Zgoraj navzdol */
+    text-align: center; /* Da text v center od Leve proti Desni */
+    background-color: rebeccapurple;
+    font-size: 200px; /* Linkom damo velikost pisave 200px */
+    width: 100%; /* Širina div kontainerja je 100% */
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+.title{
+    align-items: center; /* Da stvari v center od Zgoraj navzdol */
+    text-align: center; /* Da text v center od Leve proti Desni */
+    font-size: 50px; /* Linkom damo velikost pisave 50px */
+    width: 100%; /* Širina div kontainerja je 100% */
+}
+
+/*#region text 1*/
+.text1{
+    display: flex; /* To pač določi da je display FLEX */
+    flex-direction: row; /* To naredi da vse v tem predmeti (vse v nav) bo napisano v Vrsti (row) */
+    border: 1px solid black;
+    margin: 1%;
+    text-align: center; /* Da text v center od Leve proti Desni */
+}
+.text1 img{
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.plainText{
+    height: 100%; /* Določi višino v classu plainText */
+    font-size: 25px; /* Linkom damo velikost pisave 25px */
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+/*#endregion text 1*/
+
+
+/*#region text 2*/
+.text2{
+    display: flex; /* To pač določi da je display FLEX */
+    flex-direction: row; /* To naredi da vse v tem predmeti (vse v nav) bo napisano v Vrsti (row) */
+    border: 1px solid black;
+    margin: 1%;
+    text-align: center; /* Da text v center od Leve proti Desni */
+}
+.text2 img{
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.plainText{
+    height: 100%; /* Določi višino v classu plainText */
+    font-size: 25px; /* Linkom damo velikost pisave 25px */
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+/*#endregion text 2*/
+
+
+/*#endregion Main Body*/
+
+/*#region PHP stvari*/
+.cenik{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+table{
+    margin-left: 50px;
+    font-size: 50px;
+}
+th, td{
+    border: 5px solid black;
+    padding: 10px;
+}
+
+form{
+    border: 5px solid black;
+    padding: 50px;
+    width: min-content;
+    margin-left: 50px;
+}
+form div{
+    width: 100%;
+    font-size: 20px;
+}
+.formi{
+    display: flex;
+    flex-direction: row;
+}
+/*#endregion PHP stvari*/
